@@ -1,6 +1,6 @@
 my_name = 'Myers ZIZI chao'
 my_age = 30
-my_height = 72 
+my_height = 72
 my_weight = 180
 my_eyes = 'Yellow'
 my_teeth = 'brown'
