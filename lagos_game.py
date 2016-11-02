@@ -26,6 +26,10 @@ if drop_off == (0,5):
 	         This is the rough part of Lagos %r, and you definitly need to stay
 	         safe, what do you pick for protection? juju, a gun or wisdom?""" % name
 
+
+	else:
+		 print "z"#loop
+
 print ""
 
 ############################
@@ -147,23 +151,3 @@ else:
 	#loop
 
 print ""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
