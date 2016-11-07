@@ -173,7 +173,7 @@ def hawker():
 
 		elif "buy it" in thirst:
 
-			print "You clearly are not a smart %r. Who buys water for N5,000?.
+			print "You clearly are not a smart %r. Who buys water for N5,000?."
 			print "You wouldn't last in Lagos." % name
 			exit(0)
 
