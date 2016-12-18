@@ -21,6 +21,7 @@ class Scene(object):
 
 class Engine(object):
 
+
     def __init__(self, scene_map):
         self.scene_map = scene_map
 
@@ -45,9 +46,9 @@ class Death(Scene):
 
     quips = [
         "You died.  You kinda suck at this.",
-         "Your mom would be proud...if she were smarter.",
-         "Such a luser.",
-         "I have a small puppy that's better at this."
+        "Your mom would be proud...if she were smarter.",
+        "Such a luser.",
+        "I have a small puppy that's better at this."
     ]
 
     def enter(self):
