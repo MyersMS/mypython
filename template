@@ -126,7 +126,7 @@ print "abc"
 
 print ""
 ######
-name = raw_input(">")
+abc = raw_input(">")
 ######
 print ""
 
