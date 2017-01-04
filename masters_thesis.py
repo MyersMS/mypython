@@ -13,7 +13,7 @@ def need_for_sustainable_ag():
     print "The need for sustainable agriculture worldwide has become especially pressing given growing"
     print "concerns about agriculture's role in contributing to pollution and climate change."
     print "In addition, the world's population is projected to rise significantly by 2050"
-    print "The world population will be ______ billion in 2050 (round to nearest whole number)"
+    print "The world population will be ______ billion in 2050 (round to nearest whole number)."
 
     valid_input = False
     while not valid_input:
