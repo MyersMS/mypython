@@ -29,7 +29,7 @@ def need_for_sustainable_ag():
             print "10 billion is correct but to be precise, about 9.7"
             print "With this projected amount, there will be increasing pressure to intensify"
             print "agricultural production in many regions across the world given that most of the" 
-            print "world’s arable land (land suitable for growing crops) is already being farmed"
+            print "world’s arable land (land suitable for growing crops) is already being farmed."
 
             monoculture()
             valid_input = True
@@ -39,14 +39,14 @@ def need_for_sustainable_ag():
             print "BZZZZZZZZZZZZZZ!!! wrong, 10 billion is the answer, but to be precise, about 9.7"
             print "With this projected amount, there will be increasing pressure to intensify"
             print "agricultural production in many regions across the world given that most of the" 
-            print "world’s arable land (land suitable for growing crops) is already being farmed"
+            print "world’s arable land (land suitable for growing crops) is already being farmed."
 
             monoculture()
             valid_input = True
 
         else: # Anything other than integer
 
-            print "Population is in NUMBERS %s!!!. This isn't rocket science. Try again" %name
+            print "Population is in NUMBERS %s!!!. This isn't rocket science. Try again." %name
 
         print ""
 
@@ -126,7 +126,8 @@ def staple_crops():
             print "This level of homogeneity in our agricultural food systems is due, in part, to" 
             print "pressures from political and economic forces and economies of scale."
 
-            exit(0)
+            interseeding()
+            # Change back to interseeding
             valid_input = True
 
         elif "oat" and "oats" in grains:
@@ -143,42 +144,52 @@ def staple_crops():
 
 #Introduction
 
-def abc():
+#def interseeding():
 
-    print "abc"
-    print "abc"
+    #print "Continuous use of monoculture is associated with increased risk of crop disease,"
+    #print "herbicide resistance, reductions in soil quality, and a variety of other"
+    #print "agricultural and environmental problems. Hence, increasing interest in understanding"
+    #print "crop diversity and the effects on sustainable agriculture."
+    #print ""
+    #print "My project examined several strategies for both managing the hayfield plant community prior"
+    #print "to planting the crop mixture and the timing and approach to seeding the mixture."
+    #print ""
+    #print "The rational and hypotheses were formed based of 3 managemenst practices."
+    #print "Interseeding"
+    #print "Mowing"
+    #print "Tillage"
 
-    valid_input = False
-    while not valid_input:
+    #valid_input = False
+    #while not valid_input:
 
-        print ""
+        #print ""
 ######
-        abc = raw_input(">")
+        #abc = raw_input(">")
 ######
-        print ""
+        #print ""
 
-        if "abc" in abc:
+        #if "abc" in abc:
 
-            print "abc"
-            print "abc"
-            exit(0)
+            #print "abc"
+            #print "abc"
+            #exit(0)
 
-        elif "abc" in abc:
+        #elif "abc" in abc:
 
-            print "abc"
-            print "abc"
-            exit(0)
+            #print "abc"
+            #print "abc"
+            #exit(0)
 
-        elif "abc" in abc:
+        #elif "abc" in abc:
 
-            abc()
-            valid_input = True
+            #abc()
+            #valid_input = True
 
-        else:
+        #else:
 
-            print "abc"
+            #print "abc"
 
-        print ""
+        #print ""
 
 ##################
 
