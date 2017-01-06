@@ -20,33 +20,42 @@ def need_for_sustainable_ag():
 
         print ""
 ######
-        world_population = raw_input(">") # I want to put int here so if its the wrong intiger -> elif, anything other than integer, else.
+        world_population = raw_input(">")
+        ### world_population = float(world_population) --- WOULD NOT CONVERT STRING TO FLOAT IT RESPONSE GIVE ELSE
+
 ######
         print ""
 
         if "10" in world_population:
+        ### if 9.5 < world_population and world_population <= 10
 
             print "10 billion is correct but to be precise, about 9.7"
             print "With this projected amount, there will be increasing pressure to intensify"
             print "agricultural production in many regions across the world given that most of the" 
-            print "world’s arable land (land suitable for growing crops) is already being farmed."
+            print "world’s arable land (land suitable for growing crops) is already being farmed"
 
             monoculture()
             valid_input = True
+            ### return 1 #adding 1 to grade -- remove both about (nick6)
 
-        elif world_population > 10 and world_population < 10: # An integer thats not 10
+
+        elif world_population > 10 and world_population < 10:
 
             print "BZZZZZZZZZZZZZZ!!! wrong, 10 billion is the answer, but to be precise, about 9.7"
             print "With this projected amount, there will be increasing pressure to intensify"
             print "agricultural production in many regions across the world given that most of the" 
-            print "world’s arable land (land suitable for growing crops) is already being farmed."
+            print "world’s arable land (land suitable for growing crops) is already being farmed"
 
             monoculture()
             valid_input = True
+            ### return 0 -- remove both about (nick6)
+ #THIS DOES NOT WORK
 
-        else: # Anything other than integer
+        else:
 
-            print "Population is in NUMBERS %s!!!. This isn't rocket science. Try again." %name
+            print "Population is in NUMBERS %s!!!. This isn't rocket science. Try again" %name
+            ### need_for_sustainable_ag()
+
 
         print ""
 
@@ -73,6 +82,7 @@ def monoculture():
         print ""
 ######
         reliance_on = raw_input(">")
+        ### reliance_on = reliance_on.lower() --- Since monoculture first letter is capital, allows for small letter input without providing error
 ######
         print ""
 
@@ -83,18 +93,22 @@ def monoculture():
 
             staple_crops()
             valid_input = True
+            ### return 1 -- remove both about (nick6)
 
         elif "polyculture" in reliance_on:
 
             print "No. This is good for sustainable agriculture. Try again."
+            ### return 0
 
         elif "silviculture" in reliance_on:
 
             print "No. This is good for sustainable agriculture. Try again."
+            ### return 0
 
         else:
 
             print "%s please open your eyes and read the question carefully." %name
+            ### return 0 IS THIS NECESSARY
 
         print ""
 
@@ -126,17 +140,21 @@ def staple_crops():
             print "This level of homogeneity in our agricultural food systems is due, in part, to" 
             print "pressures from political and economic forces and economies of scale."
 
-            interseeding()
-            # Change back to interseeding
+            exit(0)
+            #interseeding()
             valid_input = True
+            ### return 1 
 
         elif "oat" and "oats" in grains:
 
-            print "BZZZZZZZZZZZZZZ!!! One of the staples is wrong. Try again." 
+            print "BZZZZZZZZZZZZZZ!!! One of the staples is wrong. Try again."
+            ### return 0 -- remove both about (nick6) 
+ #THIS DOES NOT WORK
 
         else:
 
             print "%s please open your eyes and read the question carefully." %name
+            ### return 0 IS THIS NECESSARY
 
         print ""
 
@@ -1647,8 +1665,10 @@ def abc():
 
         print ""
 
-#********************************************************************************************************
-#This is where we start
+###################
+
+#Introduction
+
 
 print "Welcome to my Master's thesis question and answer script."
 print "My Thesis is called:" 
@@ -1669,4 +1689,12 @@ print ""
 print "Great, let's get started %s." %name
 
 print ""
-need_for_sustainable_ag() 
+
+grade = 0 #make starting grade 0
+num_questions = 3 #number of questions - remember to update this when I add more questions
+grade += need_for_sustainable_ag() 
+grade += monoculture()
+grade += staple_crops()
+
+#mixing strings with numbers. use str function to convert number into string
+print "Score: " + str(round(float(grade)/num_questions * 100, 2)) + '%'
