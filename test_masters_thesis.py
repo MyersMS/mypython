@@ -21,15 +21,15 @@ def need_for_sustainable_ag():
         print ""
 ######
         world_population = raw_input(">")
-        ### world_population = float(world_population) --- WOULD NOT CONVERT STRING TO FLOAT IT RESPONSE GIVE ELSE
+        ### world_population = float(world_population) --- WOULD NOT CONVERT STRING TO FLOAT, IF RESPONSE GIVE ELSE
 
 ######
         print ""
 
-        if "10" in world_population:
-        ### if 9.5 < world_population and world_population <= 10
+        #if "10" in world_population:
+        if 9.6 >= world_population and world_population <= 10:
 
-            print "10 billion is correct but to be precise, about 9.7"
+            print "Correct!"
             print "With this projected amount, there will be increasing pressure to intensify"
             print "agricultural production in many regions across the world given that most of the" 
             print "world’s arable land (land suitable for growing crops) is already being farmed"
@@ -39,9 +39,9 @@ def need_for_sustainable_ag():
             ### return 1 #adding 1 to grade -- remove both about (nick6)
 
 
-        elif world_population > 10 and world_population < 10:
+        elif world_population > 10 and world_population < 9.6:
 
-            print "BZZZZZZZZZZZZZZ!!! wrong, 10 billion is the answer, but to be precise, about 9.7"
+            print "BZZZZZZZZZZZZZZ!!! Wrong! It ranges from 9.6 to 10"
             print "With this projected amount, there will be increasing pressure to intensify"
             print "agricultural production in many regions across the world given that most of the" 
             print "world’s arable land (land suitable for growing crops) is already being farmed"
@@ -160,54 +160,58 @@ def staple_crops():
 
 ##################
 
-#Introduction
+#Interseeding
 
-#def interseeding():
+def interseeding():
 
-    #print "Continuous use of monoculture is associated with increased risk of crop disease,"
-    #print "herbicide resistance, reductions in soil quality, and a variety of other"
-    #print "agricultural and environmental problems. Hence, increasing interest in understanding"
-    #print "crop diversity and the effects on sustainable agriculture."
-    #print ""
-    #print "My project examined several strategies for both managing the hayfield plant community prior"
-    #print "to planting the crop mixture and the timing and approach to seeding the mixture."
-    #print ""
-    #print "The rational and hypotheses were formed based of 3 managemenst practices."
-    #print "Interseeding"
-    #print "Mowing"
-    #print "Tillage"
+    print "Continuous use of monoculture is associated with increased risk of crop disease,"
+    print "herbicide resistance, reductions in soil quality, and a variety of other"
+    print "agricultural and environmental problems. Hence, increasing interest in understanding"
+    print "crop diversity and the effects on sustainable agriculture."
+    print ""
+    print "My project examined several strategies for both managing the hayfield plant community prior"
+    print "to planting the crop mixture and the timing and approach to seeding the mixture."
+    print ""
+    print "The rational and hypotheses were formed based of 3 management practices."
+    print "Interseeding (15 different crops)"
+    print "Mowing"
+    print "Tillage"
+    print ""
+    print "Interseeding will provide 2 major effects. Reducing need for weed management and"
+    print "Competition among crop species. One is an advantage while the other is a disadvantage."
+    print "Which is the advantage?"
 
-    #valid_input = False
-    #while not valid_input:
+    valid_input = False
+    while not valid_input:
 
-        #print ""
+        print ""
 ######
-        #abc = raw_input(">")
+        advantage = raw_input(">")
 ######
-        #print ""
+        print ""
 
-        #if "abc" in abc:
+        if "weed" in abc:
 
-            #print "abc"
-            #print "abc"
-            #exit(0)
+            print "Correct! Seeding that many crops (15) supresses the growth"
+            print "of weeds, therefore less weed management. However, there is competition"
+            print "for resources among the crops, which is detrimental to thier growth."
+            exit(0)
+            ### return 1
 
-        #elif "abc" in abc:
+        elif "competition" in abc:
 
-            #print "abc"
-            #print "abc"
-            #exit(0)
+            print "Wrong! Competition among crops for resources will eventually be detrimental."
+            print "to thier growth. Seeding many crops (15) is advantageous because they supress"
+            print "the growth of weeds, therefore less weed management."
+            exit(0)
+            ### return 0
 
-        #elif "abc" in abc:
+        else:
 
-            #abc()
-            #valid_input = True
+            print "%s please open your eyes and read the question carefully." %name
+            ### return 0 IS THIS NECESSARY
 
-        #else:
-
-            #print "abc"
-
-        #print ""
+        print ""
 
 ##################
 
@@ -1691,10 +1695,11 @@ print "Great, let's get started %s." %name
 print ""
 
 grade = 0 #make starting grade 0
-num_questions = 3 #number of questions - remember to update this when I add more questions
+num_questions = 4 #number of questions - remember to update this when I add more questions
 grade += need_for_sustainable_ag() 
 grade += monoculture()
 grade += staple_crops()
+grade += interseeding()
 
 #mixing strings with numbers. use str function to convert number into string
 print "Score: " + str(round(float(grade)/num_questions * 100, 2)) + '%'
